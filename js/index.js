@@ -1,0 +1,11 @@
+var numString = prompt('Введите число:');
+var num = +numString;
+var interval_1000_2000;
+interval_1000_2000 = num>=1000 && num<=2000;
+var isEvenAndNotMul10;
+isEvenAndNotMul10 = !num%10===0 && num%2===0;
+var lastExpres;
+lastExpres = num%100===0 && num%300!==0;
+var answer;
+answer = interval_1000_2000 && isEvenAndNotMul10 && lastExpres;
+alert('Ваше число подходит под все условия: ' + answer);
